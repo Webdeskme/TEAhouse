@@ -10,7 +10,7 @@ const createWindow = () => {
     width: 800,
     height: 600,
     resizable: false,
-    kiosk: true,
+    fullscreen: true,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     }
