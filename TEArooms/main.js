@@ -8,12 +8,11 @@ var state = app.commandLine.getSwitchValue("state");
 const createWindow = (width, height) => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-	type: 'desktop',
-    width: width,
-    height: height,
+    width: 800,
+    height: 600,
     autoHideMenuBar: true,
     resizable: false,
-    frame: false,
+    frame: true,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     }
@@ -23,7 +22,7 @@ const createWindow = (width, height) => {
   mainWindow.loadFile('index.html')
 
   // Open the DevTools.
-  // mainWindow.webContents.openDevTools()
+   //mainWindow.webContents.openDevTools()
 }
 
 // This method will be called when Electron has finished

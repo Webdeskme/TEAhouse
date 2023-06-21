@@ -1,0 +1,33 @@
+{
+  "name": "TEArooms",
+  "version": "0.1.0",
+  "description": "Application Finder for TEAhouse",
+  "main": "main.js",
+  "scripts": {
+    "test": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Webdeskme/TEAhouse.git"
+  },
+  "keywords": [
+    "ver",
+    "open",
+    "os",
+    "node",
+    "nodejs",
+    "javascript"
+  ],
+  "author": "Adam W. Telford",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Webdeskme/TEAhouse/issues"
+  },
+  "homepage": "https://github.com/Webdeskme/TEAhouse#readme",
+  "devDependencies": {
+    "electron": "^25.1.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.0"
+  }
+}

@@ -8,12 +8,11 @@ var state = app.commandLine.getSwitchValue("state");
 const createWindow = (width, height) => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-	type: 'desktop',
-    width: width,
-    height: height,
-    autoHideMenuBar: true,
-    resizable: false,
-    frame: false,
+    width: 800,
+    height: 600,
+    autoHideMenuBar: false,
+    resizable: true,
+    frame: true,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     }
