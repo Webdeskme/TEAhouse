@@ -1,16 +1,18 @@
 // main.js
 
 // Modules to control application life and create native browser window
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow, screen } = require('electron')
 const path = require('path')
 
-const createWindow = () => {
+const createWindow = (width, height) => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+	type: 'desktop',
+    width: width,
+    height: height,
+    autoHideMenuBar: true,
     resizable: false,
-    fullscreen: true,
+    frame: false,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     }
@@ -27,7 +29,9 @@ const createWindow = () => {
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
 app.whenReady().then(() => {
-  createWindow()
+	const primaryDisplay = screen.getPrimaryDisplay();
+  const { width, height } = primaryDisplay.workAreaSize;
+  createWindow(width, height);
 
   app.on('activate', () => {
     // On macOS it's common to re-create a window in the app when the
