@@ -1,0 +1,61 @@
+body {
+ /*background-size:     cover;                      /* <------ */
+    /*background-repeat:   no-repeat;*/
+    /*background-position: center center; */
+ /*background-color: #000000;*/
+ /* Full height */
+
+  /* Center and scale the image nicely */
+  /*background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;*/
+  /*background-size: cover;*/
+  position: relative;
+ background-image: url("teaos.png");
+  background-size: 150vh;
+  background-color: #000000;
+}
+.logo {
+	width: 40px;
+	}
+.clock {
+        width: 30rem;
+        height: 30rem;
+        border: 20px solid white;
+        /*margin: 50px auto;*/
+        float: left;
+        border-radius: 100%;
+        position: relative;
+        padding: 2rem;
+        box-shadow:
+            0 0 0 4px rgba(0, 0, 0, 0.1),
+            inset 0 0 0 3px #EFEFEF,
+            inset 0 0 10px black,
+            0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+
+    .clock-face {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transform: translateY(-3px);
+    }
+    .hand {
+            width: 50%;
+            height: 6px;
+            background: black;
+            position: absolute;
+            top: 50%;
+            transform-origin: 100%;
+            transform: rotate(90deg);
+            transition: 0.3s all;
+            transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+        }
+        .apps {
+        height: 400px;
+        min-height: 400px;
+        max-height: 400px;
+        }

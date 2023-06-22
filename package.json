@@ -28,6 +28,7 @@
     "electron": "^25.1.1"
   },
   "dependencies": {
-    "bootstrap": "^5.3.0"
+    "bootstrap": "^5.3.0",
+    "crypto-js": "^4.1.1"
   }
 }

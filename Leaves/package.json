@@ -1,7 +1,7 @@
 {
-  "name": "TEAleaves",
+  "name": "TEArooms",
   "version": "0.1.0",
-  "description": "File Directory for TEAhouse",
+  "description": "Application Finder for TEAhouse",
   "main": "main.js",
   "scripts": {
     "test": "electron ."

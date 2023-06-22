@@ -1,17 +1,31 @@
-<!--index.html-->
-
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>Tea Rooms</title>
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  </head>
-  <body>
-    <h1>Tea Rooms</h1>
-    <script src="./index.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Apps</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  <!--<link href="bootstrap/css/bootstrap.css" rel="stylesheet">-->
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <!--<link href="index.css" rel="stylesheet">-->
+</head>
+<body>
+  <div class="jumbotron text-center">
+      <h1>Apps</h1>
+      <p>Tea and Node apps from the Apps folder in the home directory.</p>
+  </div>
+  <div class="container">
+  	<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>App Name</th>
+      </tr>
+    </thead>
+    <tbody id="apps">
+    </tbody>
+  </table>
+  </div>
+  <script src="index.js"></script>
+  <!--<script src="bootstrap/js/bootstrap.js"></script>-->
+</body>
 </html>
