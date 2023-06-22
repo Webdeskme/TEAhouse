@@ -14,7 +14,12 @@ body {
   /*background-size: cover;*/
   position: relative;
  background-image: url("teaos.png");
-  background-size: 150vh;
+ background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover
+  /*background-size: 150vh;*/
   background-color: #000000;
 }
 .logo {
