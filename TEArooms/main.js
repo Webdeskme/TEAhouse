@@ -14,7 +14,7 @@ const createWindow = (width, height) => {
     resizable: true,
     frame: true,
     webPreferences: {
-      preload: path.join(__dirname, 'preload.js')
+      enableRemoteModule: true, nodeIntegration: true, contextIsolation: false, preload: path.join(__dirname, 'preload.js')
     }
   })
 
